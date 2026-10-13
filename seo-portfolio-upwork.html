@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shahriar — SEO Specialist | E-commerce &amp; Multilingual SEO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#faf8f3; --card:#ffffff; --text:#0d1b2a; --muted:#52606d; --line:#e4dfd3;
+  --gold:#b8902a; --navy:#0d1b2a; --soft:#f1ecdf;
+  --head:'Barlow Condensed','Arial Narrow',Impact,sans-serif;
+  --body:'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1522; --card:#112033; --text:#f1ece0; --muted:#a9b4c0; --line:#22344a;
+    --gold:#d9b04a; --navy:#f1ece0; --soft:#162a40;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1522; --card:#112033; --text:#f1ece0; --muted:#a9b4c0; --line:#22344a;
+  --gold:#d9b04a; --navy:#f1ece0; --soft:#162a40;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.6;font-size:16px}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--head);line-height:1.02;margin:0;letter-spacing:-.01em}
+.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+.logo{font-family:var(--head);font-weight:900;font-size:1.3rem;letter-spacing:.02em}
+.logo span{color:var(--gold)}
+.btn{display:inline-block;background:var(--gold);color:#0d1b2a;font-weight:600;text-decoration:none;padding:11px 20px;border-radius:3px;font-size:.95rem}
+.btn.ghost{background:transparent;border:1px solid var(--gold);color:var(--text)}
+.hero{padding:72px 0 56px}
+.eyebrow{color:var(--gold);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;margin-bottom:18px}
+.hero h1{font-weight:900;font-size:clamp(3rem,9vw,6.4rem);text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{max-width:620px;color:var(--muted);font-size:1.1rem;margin:22px 0 28px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 13px;font-size:.82rem;color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin:40px 0 0}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:18px}
+.fact b{display:block;font-family:var(--head);font-weight:800;font-size:2rem;color:var(--gold)}
+.fact span{color:var(--muted);font-size:.9rem}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-weight:900;font-size:clamp(2rem,5vw,3.2rem);text-transform:uppercase;margin-bottom:8px}
+.sub{color:var(--muted);max-width:640px;margin:0 0 32px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:26px;margin-bottom:22px}
+.case .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.tag{font-size:.74rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.case h3{font-weight:800;font-size:1.9rem;margin-bottom:8px}
+.case p{margin:0 0 14px;color:var(--muted)}
+.case h4{margin:18px 0 6px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text)}
+.case ul{margin:0 0 6px;padding-left:20px;color:var(--muted)}
+.case li{margin-bottom:5px}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+.num{background:var(--soft);border-radius:4px;padding:14px}
+.num b{display:block;font-family:var(--head);font-weight:800;font-size:1.8rem;color:var(--text)}
+.num span{font-size:.82rem;color:var(--muted)}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:10px}
+.chart{background:var(--soft);border-radius:4px;padding:14px}
+.chart h5{margin:0 0 8px;font-size:.78rem;font-weight:600;color:var(--muted)}
+.chart svg{width:100%;height:auto;display:block}
+.bar{fill:var(--gold)}
+.axis{fill:var(--muted);font-size:9px;font-family:var(--body)}
+.val{fill:var(--text);font-size:9px;font-weight:600;font-family:var(--body)}
+.ln{fill:none;stroke:var(--text);stroke-width:2}
+.dot{fill:var(--gold)}
+.src{font-size:.78rem;color:var(--muted);margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px}
+.svc h3{font-weight:800;font-size:1.3rem;margin-bottom:6px}
+.svc p{margin:0;color:var(--muted);font-size:.95rem}
+.cta{text-align:center;padding:72px 0}
+.cta h2{font-weight:900;font-size:clamp(2.4rem,7vw,4.6rem);text-transform:uppercase;margin-bottom:18px}
+.cta p{color:var(--muted);max-width:520px;margin:0 auto 26px}
+footer{padding:26px 0 36px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="logo">SHAHRIAR<span>.</span>SEO</div>
+    <a class="btn" href="https://www.upwork.com/freelancers/~016898508618a9bd90" target="_blank" rel="noopener">Hire me on Upwork</a>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">E-commerce SEO · Multilingual SEO</div>
+    <h1>I help online stores<br>get found on <em>Google.</em></h1>
+    <p>I do keyword research, on-page SEO, audits and content plans. I work in English, Italian and Urdu, for clients in the USA, UK, Italy and Pakistan.</p>
+    <div class="chips">
+      <span class="chip">SEO audits</span><span class="chip">Keyword research</span><span class="chip">Meta descriptions</span><span class="chip">On-page SEO</span><span class="chip">Technical SEO</span><span class="chip">Italian SEO</span><span class="chip">GEO (AI search)</span>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>6</b><span>Sites shown below</span></div>
+      <div class="fact"><b>4</b><span>Markets: USA, UK, Italy, Pakistan</span></div>
+      <div class="fact"><b>3</b><span>Languages: English, Italian, Urdu</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Selected work</h2>
+    <p class="sub">Real projects with real numbers, from store reports and Google Search Console.</p>
+
+    <!-- MYSTERY -->
+    <article class="case">
+      <div class="meta"><span class="tag">USA</span><span class="tag">·</span><span class="tag">Online courses</span><span class="tag">·</span><span class="tag">2023</span><span class="tag">·</span><span class="tag">$1,000 budget</span></div>
+      <h3>Mystery College — sales up 90% in one year</h3>
+      <p>Mystery College sells online meditation courses to students in the USA. I ran its SEO in 2023 on a $1,000 budget.</p>
+      <h4>What I did</h4>
+      <ul>
+        <li>On-page SEO on the course pages.</li>
+        <li>Technical SEO fixes.</li>
+        <li>Keyword research built around what course buyers search for.</li>
+      </ul>
+      <h4>Store results, 2023 vs 2022</h4>
+      <div class="nums">
+        <div class="num"><b>+90%</b><span>Total sales: $9,224.73 → $17,524.81</span></div>
+        <div class="num"><b>+41%</b><span>Orders: 64 → 90</span></div>
+      </div>
+      <div class="charts">
+        <div class="chart"><h5>Total sales (USD)</h5><svg id="mc-sales" viewBox="0 0 360 150" role="img" aria-label="Mystery College sales 2022 vs 2023"></svg></div>
+        <div class="chart"><h5>Orders</h5><svg id="mc-orders" viewBox="0 0 360 150" role="img" aria-label="Mystery College orders 2022 vs 2023"></svg></div>
+      </div>
+      <div class="src">Source: WooCommerce store report, 1 Jan – 31 Dec 2023 vs 2022.</div>
+      <h4>More recently (2026)</h4>
+      <p>I wrote an SEO action brief for the owner's nine sites, sorted into three priority tiers, with a 4-week timeline and a QA checklist. I also wrote a 2-month plan for four of the sites, including GEO (getting cited by AI search tools).</p>
+    </article>
+
+    <!-- NATURAL HERBS -->
+    <article class="case">
+      <div class="meta"><span class="tag">UK</span><span class="tag">·</span><span class="tag">E-commerce</span><span class="tag">·</span><span class="tag">Jan – Nov 2024</span><span class="tag">·</span><span class="tag">$1,500 budget</span></div>
+      <h3>Natural Herbs Market — net sales up 16% in 11 months</h3>
+      <p>Natural Herbs Market is an online herbs and wellness store in the UK. I ran its SEO for 11 months in 2024 on a $1,500 budget.</p>
+      <h4>What I did</h4>
+      <ul>
+        <li>Technical SEO fixes.</li>
+        <li>Keyword optimisation across product pages.</li>
+        <li>Link building.</li>
+      </ul>
+      <h4>Store results, Jan – Nov 2024 vs the same months of 2023</h4>
+      <div class="nums">
+        <div class="num"><b>+16%</b><span>Net sales: £55,881.19 → £64,803.71</span></div>
+        <div class="num"><b>+12%</b><span>Total sales: now £74,708.71</span></div>
+        <div class="num"><b>+9%</b><span>Items sold: 3,549 → 3,881</span></div>
+      </div>
+      <div class="charts">
+        <div class="chart"><h5>Net sales (GBP)</h5><svg id="nh-net" viewBox="0 0 360 150" role="img" aria-label="Natural Herbs net sales 2023 vs 2024"></svg></div>
+        <div class="chart"><h5>Items sold</h5><svg id="nh-items" viewBox="0 0 360 150" role="img" aria-label="Natural Herbs items sold 2023 vs 2024"></svg></div>
+      </div>
+      <div class="src">Source: WooCommerce analytics, 1 Jan – 30 Nov 2024 vs 1 Jan – 30 Nov 2023.</div>
+    </article>
+
+    <!-- 1 MAKOLA -->
+    <article class="case">
+      <div class="meta"><span class="tag">USA</span><span class="tag">·</span><span class="tag">E-commerce</span><span class="tag">·</span><span class="tag">makolastores.us</span></div>
+      <h3>Makola Stores — on-page SEO for 44 products</h3>
+      <p>Makola Stores is an online African food store in the USA. Its shoppers are mostly the African community there.</p>
+      <h4>What I did</h4>
+      <ul>
+        <li>Covered 3 categories: Snacks &amp; Delicacies (10), Dried Fish &amp; Fruits (20), Food &amp; Groceries (14).</li>
+        <li>Chose a new long-tail focus keyword for each product: product + origin + USA.</li>
+        <li>Wrote an 18–19 word meta description for each product, with the keyword and price.</li>
+        <li>Added related (LSI) keywords. Delivered everything in one clear Excel report.</li>
+      </ul>
+      <h4>Search Console results</h4>
+      <div class="nums">
+        <div class="num"><b>8,297</b><span>Clicks, Jan – 12 Oct 2026</span></div>
+        <div class="num"><b>+44%</b><span>Monthly clicks, Jan to Sep (670 → 963)</span></div>
+        <div class="num"><b>~16 → ~9</b><span>Average position, Jan to Sep</span></div>
+      </div>
+      <div class="charts">
+        <div class="chart"><h5>Clicks per month</h5><svg id="mk-clicks" viewBox="0 0 360 150" role="img" aria-label="Makola monthly clicks"></svg></div>
+        <div class="chart"><h5>Average position (higher on the chart is better)</h5><svg id="mk-pos" viewBox="0 0 360 150" role="img" aria-label="Makola average position"></svg></div>
+      </div>
+      <div class="src">Source: Google Search Console, whole site, 1 Jan – 12 Oct 2026. Charts show full months Jan–Sep.</div>
+    </article>
+
+    <!-- 2 BNB -->
+    <article class="case">
+      <div class="meta"><span class="tag">Italy</span><span class="tag">·</span><span class="tag">Hospitality</span><span class="tag">·</span><span class="tag">Native Italian</span></div>
+      <h3>BnB Hotel Ospedale Maggiore — Bologna</h3>
+      <p>A B&amp;B near the Ospedale Maggiore in Bologna. Guests are often family members of hospital patients, so the SEO had to match what they search for.</p>
+      <h4>What I did</h4>
+      <ul>
+        <li>Wrote two-month SEO action plans in native Italian.</li>
+        <li>Did keyword research around stays near the hospital ("b&amp;b vicino ospedale maggiore bologna" and similar).</li>
+        <li>Planned 45 blog titles with a target keyword for each.</li>
+      </ul>
+      <h4>Search Console results</h4>
+      <div class="nums">
+        <div class="num"><b>8×</b><span>Monthly impressions, Jan to Sep (451 → 3,639)</span></div>
+        <div class="num"><b>~15 → ~6</b><span>Average position, Jan to Sep</span></div>
+        <div class="num"><b>306</b><span>Clicks, Jan – 12 Oct 2026</span></div>
+      </div>
+      <div class="charts">
+        <div class="chart"><h5>Impressions per month</h5><svg id="bb-imp" viewBox="0 0 360 150" role="img" aria-label="BnB monthly impressions"></svg></div>
+        <div class="chart"><h5>Average position (higher on the chart is better)</h5><svg id="bb-pos" viewBox="0 0 360 150" role="img" aria-label="BnB average position"></svg></div>
+      </div>
+      <div class="src">Source: Google Search Console, whole site, 1 Jan – 12 Oct 2026. Charts show full months Jan–Sep.</div>
+    </article>
+
+    <!-- SPRAY PAINT -->
+    <article class="case">
+      <div class="meta"><span class="tag">Pakistan</span><span class="tag">·</span><span class="tag">E-commerce</span><span class="tag">·</span><span class="tag">spraypaint.pk</span><span class="tag">·</span><span class="tag">Apr – Aug 2026</span></div>
+      <h3>Spray Paint Pakistan — daily clicks about doubled</h3>
+      <p>An online store for spray paints and coatings, selling to buyers across Pakistan. I ran its SEO and reported to the owner every month.</p>
+      <h4>What I did</h4>
+      <ul>
+        <li>Wrote one blog post a day in topic groups (10 in June, 21 in July), each linked to its product page.</li>
+        <li>Rewrote titles and meta descriptions for the priority product pages.</li>
+        <li>Ran a live technical audit and reported the critical problems, such as a homepage canonical tag pointing to a theme demo site.</li>
+        <li>Did keyword research, a 2-month action plan, link-building lines, and monthly Search Console reports.</li>
+      </ul>
+      <h4>Search Console results</h4>
+      <div class="nums">
+        <div class="num"><b>~2×</b><span>Clicks per day, Apr to Aug (about 11 → 23)</span></div>
+        <div class="num"><b>8.3 → 6.0</b><span>Average position, Apr to May</span></div>
+        <div class="num"><b>27 → 34</b><span>Pages earning clicks, Apr to May</span></div>
+        <div class="num"><b>+40%</b><span>Chrome Effect page clicks, Jul to Aug (75 → 105)</span></div>
+      </div>
+      <div class="charts">
+        <div class="chart"><h5>Average clicks per day</h5><svg id="sp-daily" viewBox="0 0 360 150" role="img" aria-label="Spray Paint Pakistan average daily clicks"></svg></div>
+      </div>
+      <div class="src">Source: Google Search Console, whole site. Totals: Apr 337, May 354, Jul 575, Aug 1–20 455 clicks. June is not shown because I only have a part-month report for it.</div>
+    </article>
+
+    <!-- MARJAN -->
+    <article class="case">
+      <div class="meta"><span class="tag">Pakistan</span><span class="tag">·</span><span class="tag">Industrial</span><span class="tag">·</span><span class="tag">marjanpolymer.com</span></div>
+      <h3>Marjan Polymer — 15-article SEO content package</h3>
+      <p>Marjan Polymer Industries supplies industrial materials, machinery and protective coatings from Lahore. It is the official ZRC cold galvanizing compound distributor in Pakistan.</p>
+      <h4>What I did</h4>
+      <ul>
+        <li>Wrote 15 SEO articles, 1,200–2,000 words each, for Pakistani buyers.</li>
+        <li>Used a natural, human tone and a focus keyword in every article.</li>
+        <li>Wrote a 17–18 word meta description for each article.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What I offer</h2>
+    <p class="sub">Clear work, clear files, plain English.</p>
+    <div class="grid">
+      <div class="svc"><h3>SEO audits</h3><p>What is holding the site back, what to fix first, and how.</p></div>
+      <div class="svc"><h3>Keyword research</h3><p>Long-tail keywords that real buyers type, for your market.</p></div>
+      <div class="svc"><h3>On-page SEO</h3><p>Focus keywords, meta titles and descriptions, and page structure.</p></div>
+      <div class="svc"><h3>Content plans</h3><p>Blog topics and articles in English, Italian or Urdu.</p></div>
+      <div class="svc"><h3>Technical checks</h3><p>Canonical tags, broken links, schema and indexing problems.</p></div>
+      <div class="svc"><h3>Monthly reports</h3><p>Search Console numbers in simple language, with next steps.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Let's get your site ranking.</h2>
+    <p>Send me a message on Upwork with your site link. I will tell you where I would start.</p>
+    <a class="btn" href="https://www.upwork.com/freelancers/~016898508618a9bd90" target="_blank" rel="noopener">View my Upwork profile</a>
+  </div>
+</section>
+
+<div class="wrap"><footer>Shahriar (Hakim Mohammed S.) · SEO Specialist · Dhaka, Bangladesh</footer></div>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  var M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'];
+  function el(n,a,t){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(t!==undefined)e.textContent=t;return e}
+  function fmt(v){return v>=1000?(v/1000).toFixed(1).replace('.0','')+'k':String(v)}
+  function bars(id,vals,labels,f){
+    var s=document.getElementById(id);if(!s)return;
+    labels=labels||M;f=f||fmt;
+    var W=360,H=150,pl=8,pr=8,pt=18,pb=20,n=vals.length,max=Math.max.apply(null,vals);
+    var bw=(W-pl-pr)/n,g=n<4?60:6;
+    vals.forEach(function(v,i){
+      var h=(H-pt-pb)*v/max,x=pl+i*bw+g/2,y=H-pb-h;
+      s.appendChild(el('rect',{x:x,y:y,width:bw-g,height:h,rx:2,'class':'bar'}));
+      s.appendChild(el('text',{x:x+(bw-g)/2,y:y-4,'text-anchor':'middle','class':'val'},f(v)));
+      s.appendChild(el('text',{x:x+(bw-g)/2,y:H-6,'text-anchor':'middle','class':'axis'},labels[i]));
+    });
+  }
+  function line(id,vals){
+    var s=document.getElementById(id);if(!s)return;
+    var W=360,H=150,pl=14,pr=14,pt=22,pb=22,n=vals.length;
+    var mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals);
+    var pts=vals.map(function(v,i){
+      var x=pl+i*(W-pl-pr)/(n-1);
+      var y=pt+(v-mn)/(mx-mn)*(H-pt-pb);
+      return [x,y,v];
+    });
+    s.appendChild(el('polyline',{points:pts.map(function(p){return p[0]+','+p[1]}).join(' '),'class':'ln'}));
+    pts.forEach(function(p,i){
+      s.appendChild(el('circle',{cx:p[0],cy:p[1],r:3.5,'class':'dot'}));
+      s.appendChild(el('text',{x:p[0],y:H-6,'text-anchor':'middle','class':'axis'},M[i]));
+      if(i===0||i===n-1||p[2]===mn)s.appendChild(el('text',{x:p[0],y:p[1]-8,'text-anchor':'middle','class':'val'},p[2].toFixed(1)));
+    });
+  }
+  function money(sym){return function(v){return sym+v.toLocaleString('en-US',{maximumFractionDigits:0})}}
+  bars('mc-sales',[9224.73,17524.81],['2022','2023'],money('$'));
+  bars('mc-orders',[64,90],['2022','2023']);
+  bars('nh-net',[55881.19,64803.71],['Jan–Nov 2023','Jan–Nov 2024'],money('£'));
+  bars('nh-items',[3549,3881],['Jan–Nov 2023','Jan–Nov 2024'],function(v){return v.toLocaleString('en-US')});
+  bars('mk-clicks',[670,690,946,865,938,857,974,1045,963]);
+  line('mk-pos',[15.8,13.3,13.1,11.3,11.8,10.8,9.6,10.4,9.1]);
+  bars('bb-imp',[451,628,2114,3041,3230,3287,2935,3447,3639]);
+  line('bb-pos',[15.0,18.3,9.0,7.0,6.9,6.4,6.9,7.2,5.9]);
+  bars('sp-daily',[11.2,11.4,18.5,22.8],['Apr','May','Jul','Aug 1–20'],function(v){return v.toFixed(1)});
+})();
+</script>
+</body>
+</html>
