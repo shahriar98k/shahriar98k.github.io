@@ -428,3 +428,5 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 /* big logo straddles the orange and cream bands */
 .biglogo{margin-top:0;transform:translateY(-44%);margin-bottom:-.36em;z-index:2}
 .fc{padding-top:0}
+
+.clip{position:absolute;left:4%;right:4%;top:14%;aspect-ratio:1/1;z-index:2;clip-path:inset(-200% 0 0 0 round 0 0 9999px 9999px)}.clip .cutout{width:112%;filter:none}
